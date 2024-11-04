@@ -34,4 +34,16 @@ class ChiperTest {
         //when & then
         assertThrows(IllegalArgumentException.class, () -> chiper.encryptPassword("hello world"));
     }
+
+    @Test
+    void caesarChiperDecrypt() {
+        //given
+        Chiper chiper = new Chiper(3);
+
+        //when
+        String decrypted = chiper.decryptPassword("khoor");
+
+        //then
+        assertEquals("hello",decrypted);
+    }
 }
