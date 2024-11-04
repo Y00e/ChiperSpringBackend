@@ -42,8 +42,15 @@ class ChiperTest {
 
         //when
         String decrypted = chiper.decryptPassword("khoor");
+        String decrypted1 = chiper.decryptPassword("Khoor");
+        String decrypted3 = chiper.decryptPassword("@khoor_K");
+        String decrypted4 = chiper.decryptPassword("@khoor123!");
 
         //then
         assertEquals("hello",decrypted);
+        assertEquals("Hello", decrypted1);
+        assertEquals("@hello_H", decrypted3);
+        assertEquals("@hello123!", decrypted4);
     }
+
 }
