@@ -4,14 +4,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ChiperTest {
+class CipherTest {
 
 
     @Test
     void caesarChiperEncrypt() {
 
         //given
-        Chiper chiper = new Chiper(3);
+        Cipher chiper = new Cipher(3);
 
         //when
         String encrypted = chiper.encrypt("hello");
@@ -29,7 +29,7 @@ class ChiperTest {
     @Test
     void testEncryptPasswordWithSpace() {
         //given
-        Chiper chiper = new Chiper(3);
+        Cipher chiper = new Cipher(3);
 
         //when & then
         assertThrows(IllegalArgumentException.class, () -> chiper.encrypt("hello world"));
@@ -38,7 +38,7 @@ class ChiperTest {
     @Test
     void caesarChiperDecrypt() {
         //given
-        Chiper chiper = new Chiper(3);
+        Cipher chiper = new Cipher(3);
 
         //when
         String decrypted = chiper.decrypt("khoor");

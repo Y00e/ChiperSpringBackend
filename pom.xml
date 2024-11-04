@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.example</groupId>
-    <artifactId>ChiperSpringBackend</artifactId>
+    <artifactId>CipherSpringBackend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ChiperSpringBackend</name>
     <description>ChiperSpringBackend</description>

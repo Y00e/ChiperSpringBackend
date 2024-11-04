@@ -1,12 +1,12 @@
 package org.example.chiperspringbackend;
 
-public class Chiper {
+public class Cipher {
 
     // Fields
     int shift;
 
     // Constructor
-    public Chiper(int shift) {
+    public Cipher(int shift) {
         this.shift = shift;
     }
 
