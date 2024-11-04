@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/chiper")
+@RequestMapping("/api/cipher")
 public class CipherController{
 
     Cipher cipher = new Cipher(3);

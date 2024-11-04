@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ChiperSpringBackendApplication {
+public class CipherSpringBackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ChiperSpringBackendApplication.class, args);
+        SpringApplication.run(CipherSpringBackendApplication.class, args);
     }
 
 }
