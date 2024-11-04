@@ -32,9 +32,6 @@ class ChiperTest {
         Chiper chiper = new Chiper(3);
 
         //when & then
-        assertThrows(IllegalArgumentException.class, () -> {
-            chiper.encryptPassword("hel lo");
-        });
+        assertThrows(IllegalArgumentException.class, () -> chiper.encryptPassword("hello world"));
     }
-
 }
