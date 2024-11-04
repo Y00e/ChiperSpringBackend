@@ -10,6 +10,7 @@ class CipherTest {
     @Test
     void caesarChiperEncrypt() {
 
+
         //given
         Cipher chiper = new Cipher(3);
 
