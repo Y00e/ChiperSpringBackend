@@ -14,10 +14,10 @@ class ChiperTest {
         Chiper chiper = new Chiper(3);
 
         //when
-        String encrypted = chiper.encryptPassword("hello");
-        String encrypted1 = chiper.encryptPassword("Hello");
-        String encrypted3 = chiper.encryptPassword("@hello_H");
-        String encrypted4 = chiper.encryptPassword("@hello123!");
+        String encrypted = chiper.encrypt("hello");
+        String encrypted1 = chiper.encrypt("Hello");
+        String encrypted3 = chiper.encrypt("@hello_H");
+        String encrypted4 = chiper.encrypt("@hello123!");
 
         //then
         assertEquals("khoor", encrypted);
@@ -32,7 +32,7 @@ class ChiperTest {
         Chiper chiper = new Chiper(3);
 
         //when & then
-        assertThrows(IllegalArgumentException.class, () -> chiper.encryptPassword("hello world"));
+        assertThrows(IllegalArgumentException.class, () -> chiper.encrypt("hello world"));
     }
 
     @Test
@@ -41,10 +41,10 @@ class ChiperTest {
         Chiper chiper = new Chiper(3);
 
         //when
-        String decrypted = chiper.decryptPassword("khoor");
-        String decrypted1 = chiper.decryptPassword("Khoor");
-        String decrypted3 = chiper.decryptPassword("@khoor_K");
-        String decrypted4 = chiper.decryptPassword("@khoor123!");
+        String decrypted = chiper.decrypt("khoor");
+        String decrypted1 = chiper.decrypt("Khoor");
+        String decrypted3 = chiper.decrypt("@khoor_K");
+        String decrypted4 = chiper.decrypt("@khoor123!");
 
         //then
         assertEquals("hello",decrypted);

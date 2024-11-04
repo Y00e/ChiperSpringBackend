@@ -16,13 +16,13 @@ public class ChiperController {
     }
 
     @PostMapping("encrypt")
-    public String encrypt(@RequestBody String message) {
-        return chiper.encryptPassword(message);
+    public String encrypt(@RequestBody String password) {
+        return chiper.encrypt(password);
     }
 
     @PostMapping("decrypt")
-    public String decrypt(@RequestBody String encryptedMessage) {
-        return chiper.decryptPassword(encryptedMessage);
+    public String decrypt(@RequestBody String encryptedpassword) {
+        return chiper.decrypt(encryptedpassword);
     }
 
 }

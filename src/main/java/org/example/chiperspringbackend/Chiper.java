@@ -11,7 +11,7 @@ public class Chiper {
     }
 
     // Method to encrypt a Password
-    public String encryptPassword(String password) {
+    public String encrypt(String password) {
         // encryption logic
         if (password.contains(" ")) {
             throw new IllegalArgumentException("Password cannot contain spaces.");
@@ -32,7 +32,7 @@ public class Chiper {
     }
 
     // Method to decrypt a Password
-    public String decryptPassword(String password) {
+    public String decrypt(String password) {
         // TODO Implement decryption logic
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < password.length(); i++) {
