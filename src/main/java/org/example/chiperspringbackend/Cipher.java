@@ -3,7 +3,7 @@ package org.example.chiperspringbackend;
 public class Cipher {
 
     // Fields
-    int shift;
+    private final int shift;
 
     // Constructor
     public Cipher(int shift) {
